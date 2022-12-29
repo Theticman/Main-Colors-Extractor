@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Color Extractor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Color Extractor</h1>
+  <form>
+    <label for="images">Select one or more images to get the main colors from:</label>
+    <input type="file" name="images" id="images" multiple>
+    <label for="threshold">Threshold:</label>
+    <input type="range" name="threshold" id="threshold" min="0" max="50" value="25" oninput="document.getElementById('threshold-value').innerHTML = this.value">
+    <span id="threshold-value">25</span>
+    <button type="submit">Extract Colors</button>
+  </form>
+
+  <div id="colors"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
