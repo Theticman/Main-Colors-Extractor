@@ -1,5 +1,5 @@
 // create a variable to hold the threshold value
-let threshold = 25
+let threshold = 6
 
 // update the threshold value when the range input element is changed
 document.querySelector('#threshold').addEventListener('input', function(event) {
